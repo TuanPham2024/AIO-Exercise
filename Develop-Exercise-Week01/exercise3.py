@@ -38,7 +38,7 @@ def calc_mae(list_sample):
 
 def calc_mse(list_sample):
   num_samples = len(list_sample)
-  list_sample = creat_sample(num_samples)
+  #list_sample = creat_sample(num_samples)
   expresion_result = [(abs(list_sample[i][0] - list_sample[i][1]))**2 for i in range(num_samples)]
   result = (1/num_samples)*sum(expresion_result)
   return result
