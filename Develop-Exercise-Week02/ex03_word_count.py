@@ -18,7 +18,7 @@ def extract_file_id(url) -> str:
     match = re.search(r'/file/d/([a-zA-Z0-9_-]+)/view', url)
     if match:
         return match.group(1)  # Trả về ID nếu tìm thấy
-    return None  # Trả về None nếu không tìm thấy ID
+    return ""  # Trả về None nếu không tìm thấy ID //None
 
 file_id = extract_file_id(url)#'1IBScGdW2xlNsc9v5zSAya548kNgiOrko'
 #!gdown https://drive.google.com/uc?id=$file_id # chãy trên coblab
@@ -39,7 +39,7 @@ file_id = extract_file_id(url)#'1IBScGdW2xlNsc9v5zSAya548kNgiOrko'
 
 #### CODE lỗi không hiểu lí do -> Khắc phục sau ###-----------------------------------------
 
-##import gdown 
+#Code doi chinh sửa: import gdown 
 #output_folder = 'E:\2024_AIO_VN\2024_AIO_MAIN\AIO-236-Excersice\AIO-Exercise'#'path/to/your/folder'
 #output_filename = 'P1_data.txt'  # Tên tệp mà bạn muốn lưu + đường dẫn. Default = thư mục hiện tại với tên đã chỉ định
 #output = output_folder + '\\' + output_filename # output = os.path.join(output_folder, 'downloaded_file.ext')

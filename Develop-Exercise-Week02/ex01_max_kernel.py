@@ -17,6 +17,6 @@ def max_kernel(num_list , k):
 # TEST
 assert max_kernel ([3 , 4 , 5 , 1 , -44] , 3) == [5, 5, 5]
 
-num_list = [3, 4, 5, 1, -44 , 5 ,10, 12 ,33, 1] #num_list = [3, 4,5]
+num_list = [3, 4, 5, 1, -44 , 5 ,10, 12 ,33, 1] # hỏi gì
 k = 3
 print (max_kernel( num_list , k))

@@ -34,9 +34,6 @@ def exercise1(tp, fp, fn):
   list_input = [tp, fp, fn]
   list_error = ["tp", "fp", "fn"]
 
-  # if not(isinstance(tp, int) and isinstance(fp, int) and isinstance(fn, int)):
-  #   print("TP, FP, FN must be int!")
-  #   return
   for i in range(len(list_input)):
     if not(isinstance(list_input[i], int)):
       print(list_error[i] + " must be int!")

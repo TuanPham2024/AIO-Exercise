@@ -19,7 +19,7 @@ import math
 # Creat list_sample contain n_samples, with a sample = [predict, target] 
 def creat_sample(num_samples):
   list_sample = []
-  for i in range(num_samples):
+  for _ in range(num_samples):
     predict =  random.uniform(0, 10)  # uniform(start, end) -> random cho số nguyên
     target =  random.uniform(0, 10)
     list_sample.append([predict, target])
@@ -28,8 +28,8 @@ def creat_sample(num_samples):
 # Calculate regression loss function
 def calc_mae(list_sample):
   num_samples = len(list_sample)
-  # total = 0
-  # for i in range(num_samples): total += abs(list_sample[i][0] - list_sample[i][1])
+  #_ total = 0
+  #_ for i in range(num_samples): total += abs(list_sample[i][0] - list_sample[i][1])
 
   expresion_result = [abs(list_sample[i][0] - list_sample[i][1]) for i in range(num_samples)]
   total = sum(expresion_result)
@@ -63,10 +63,6 @@ def exercise3():
   else:
     num_samples = int(num_samples)
 
-  # try:   num_samples = int(input("Input num_samples = "))
-  # except ValueError :  print("num_samples must be int!")
-  #   # return
-
   if num_samples <= 0:
     print("num_samples must be greater than 0!")
     return
@@ -98,7 +94,7 @@ def exercise3():
   print(f"Loss = {loss}")
   
 
-# ____TEST____#
+#_ ____TEST____#
 # print(calc_mae(5))
 # print(calc_mse(5))
 # print(calc_rmse(5))

@@ -61,7 +61,6 @@ def exercise4():
   print(approx_cosh(x=3.14 , n =10))
   print(approx_tan(x=3.14 , n =10))
   print(approx_cot(x=3.14 , n =10))
-  return
 
 # ____TEST____#
 exercise4()
