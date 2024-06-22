@@ -55,7 +55,6 @@ def exercise2():
 
   if name_function not in name_functions:
     print(name_function + " is not supportted!")
-    return
   else:
     calc_activation_func(x, name_function)
 
