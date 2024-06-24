@@ -18,3 +18,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          agrs: >
+            -Dsonar.organization = tuanpham2024
+            -Dsonar.projeckey = TuanPham2024_AIO-Exercise
+            -Dsonar.python.coverage.reportPaths = coverage.xml 
