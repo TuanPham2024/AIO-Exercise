@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.github\\workflows",
+    "\\.sonarlint",
+    "\\Develop-Exercise-Week04"
+  ],
+  "SelectedNode": "\\sonar-project.properties",
+  "PreviewInSolutionExplorer": false
+}
