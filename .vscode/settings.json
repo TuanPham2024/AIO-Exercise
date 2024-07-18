@@ -1,5 +1,6 @@
 {
     "sonarlint.connectedMode.project": {
+        "connectionId": "tuanpham2024",
         "projectKey": "tuanpham2024_aio24-exercise"
     }
 }
